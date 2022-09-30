@@ -633,6 +633,11 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .address-container {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 1199px) {
   .address-container {
     width: 232px;

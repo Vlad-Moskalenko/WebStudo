@@ -1,0 +1,34 @@
+.section-work-field {
+  display:none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.work-field {
+  @include flex(space-between)
+}
+
+.work-field__item {
+  position: relative;
+}
+
+.work-field__meta {
+  position: absolute;
+
+  width: 100%;
+  min-height: 70px;
+
+  @include flex(center, center);
+
+  font-weight: $font-bold;
+  text-align: center;
+
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-field__meta--bottom {
+  bottom: 0;
+}

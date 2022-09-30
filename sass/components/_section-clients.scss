@@ -1,0 +1,48 @@
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+
+  li {
+    width: calc((100% - 60px)/2);
+  }
+}
+}
+
+.company__link {
+  min-height: 92px;
+
+  @include flex(center, center);
+
+  color: $media-icon-color;
+  border-radius: 4px;
+
+  @include bordered(#AFB1B8);
+  @include transitionSvg(color, border-color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: calc(($phone-width - 60px)/2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(($tablet-width - 90px)/3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(($desktop-width - 180px)/6);
+  }
+
+}
+
+.company__logo {
+  fill: currentColor;
+}

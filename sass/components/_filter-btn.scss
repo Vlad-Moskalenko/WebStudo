@@ -1,0 +1,68 @@
+.filter {
+  max-width: 100%;
+  @include flex($justify: flex-start);
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+
+  @media screen and (max-width: 767px) {
+    width: 327px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+.filter--bottom {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+}
+
+.filter__btn {
+  padding: 6px 22px;
+
+  font-weight: $font-medium;
+  font-size: 16px;
+  line-height: 1.63;
+  background: $section-team-color;
+  letter-spacing: 0.03em;
+  border: none;
+
+  @extend %btn;
+
+  transition: color $transition-duration $transition-timing-function, background-color $transition-duration $transition-timing-function, box-shadow $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.filter__item {
+
+  &:first-child {
+
+    .filter__btn{
+      padding: 6px 25px;
+    }
+
+  }
+
+}
+
+.filter__btn--current {
+  color: $primary-white-color;
+  background-color: $accent-color;
+}

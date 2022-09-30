@@ -1,0 +1,24 @@
+@mixin bordered($color: #ECECEC) {
+  border: 1px solid $color;
+}
+
+@mixin transition($property:color) {
+  transition: $property $transition-duration $transition-timing-function;
+}
+
+@mixin transitionSvg($property1:color, $property2:background-color) {
+  transition: $property1 $transition-duration $transition-timing-function, $property2 $transition-duration $transition-timing-function;
+}
+
+@mixin backgroundSettings($background-image, $background-position, $background-repeat, $background-size) {
+  background-image: $background-image;
+  background-position: $background-position;
+  background-repeat: $background-repeat;
+  background-size: $background-size;
+}
+
+@mixin flex($justify: flex-start, $align:stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

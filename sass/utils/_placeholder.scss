@@ -1,0 +1,15 @@
+%link {
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+%btn {
+  font-family: $main-font-family, sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

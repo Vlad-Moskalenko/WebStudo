@@ -1,0 +1,75 @@
+.section-team {
+  background-color: $section-team-color;
+}
+
+.members {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include flex(space-between);
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+}
+
+.members__item:not(:last-child) {
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+}
+
+.members__item {
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(($tablet-width - 60px)/2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(($desktop-width - 120px)/4);
+  }
+}
+
+.member-container {
+  padding: 30px 0 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 0;
+  }
+}
+
+.members__avatar {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 260px;
+  }
+}
+
+.members__name {
+  font-size: 16px;
+  font-weight: $font-medium;
+}
+
+.members__name--bottom {
+  margin-bottom: 10px;
+}
+
+.members__job-title {
+  color: $primary-text-color;
+}
+
+.members__job-title--bottom {
+  margin-bottom: 16px;
+}

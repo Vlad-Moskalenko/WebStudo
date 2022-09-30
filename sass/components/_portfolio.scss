@@ -81,6 +81,10 @@
 
   @include bordered (#EEEEEE);
   border-top: none;
+
+  p {
+    color: #757575;
+  }
 }
 
 .portfolio__link {

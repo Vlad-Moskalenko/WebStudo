@@ -19,7 +19,7 @@
     <header class="header">
       <div class="header__container container">
         <a class="logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
-        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container">
+        <button class="menu-btn" type="button" aria-expanded="false">
           <svg class="menu-btn__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
             <use class="menu-btn__icon--cross" href="./images/icons.svg#icon-close-menu"></use>
             <use class="menu-btn__icon--burger" href="./images/icons.svg#icon-menu"></use>
@@ -39,38 +39,40 @@
               </li>
             </ul>
           </nav>
-          <ul class="contacts" itemscope itemtype="https://schema.org/Organization">
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111" itemprop="telephone">
-                <svg class="contacts__icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com" itemprop="email">
-                <svg class="contacts__icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="social-media">
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Instagram</a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Twitter</a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Facebook</a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Linkedin</a>
-            </li>
-          </ul>
+          <div class="contacts-container">
+            <ul class="contacts" itemscope itemtype="https://schema.org/Organization">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111" itemprop="telephone">
+                  <svg class="contacts__icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com" itemprop="email">
+                  <svg class="contacts__icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Instagram</a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Twitter</a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Facebook</a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Linkedin</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -165,6 +167,7 @@
                       media="(min-width: 768px)"
                     />
                     <img
+                      src="./images/portfolio-mobile/imgportfolio-450-1.jpg"
                       class="portfolio__img"
                       alt="Зображення дизайну постер New Orlean vs Golden Star"
                     />

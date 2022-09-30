@@ -8,10 +8,6 @@ burgerBtn.addEventListener('click', () => {
     const expanded = burgerBtn.getAttribute('aria-expanded') === 'true' || false;
     burgerBtn.setAttribute('aria-expanded', !expanded)
     menuContainer.classList.toggle('is-open')
-
-    const bodyScroll =  document.body.style.overflow === 'hidden'? 'visible' : 'hidden'
-    document.body.style.overflow = bodyScroll;
-
 })
 
 })();

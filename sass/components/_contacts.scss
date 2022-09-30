@@ -16,8 +16,10 @@
 
 }
 
-.contacts__item {
-  @extend %link;
+.menu-container {
+  .contacts__item {
+    @extend %link;
+  }
 }
 
 .contacts__item:first-child {

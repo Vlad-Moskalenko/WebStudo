@@ -19,10 +19,6 @@
 
 .navigation {
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 51px;

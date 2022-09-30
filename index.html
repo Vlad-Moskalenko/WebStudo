@@ -19,7 +19,7 @@
     <header class="header">
       <div class="header__container container">
         <a class="logo" href="./index.html"><span class="logo--color">Web</span>Studio</a>
-        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-container">
+        <button class="menu-btn" type="button" aria-expanded="false">
           <svg class="menu-btn__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
             <use class="menu-btn__icon--cross" href="./images/icons.svg#icon-close-menu"></use>
             <use class="menu-btn__icon--burger" href="./images/icons.svg#icon-menu"></use>
@@ -39,38 +39,40 @@
               </li>
             </ul>
           </nav>
-          <ul class="contacts" itemscope itemtype="https://schema.org/Organization">
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380961111111" itemprop="telephone">
-                <svg class="contacts__icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@devstudio.com" itemprop="email">
-                <svg class="contacts__icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="social-media">
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Instagram</a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Twitter</a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Facebook</a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link" href="">Linkedin</a>
-            </li>
-          </ul>
+          <div class="contacts-container">
+            <ul class="contacts" itemscope itemtype="https://schema.org/Organization">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111" itemprop="telephone">
+                  <svg class="contacts__icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com" itemprop="email">
+                  <svg class="contacts__icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="social-media">
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Instagram</a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Twitter</a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Facebook</a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="">Linkedin</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -178,7 +180,6 @@
                 class="members__avatar"
                 srcset="./images/Ihor.jpg 1x, ./images/Ihor@2x.jpg 2x"
                 src="./images/Ihor.jpg"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw"
                 itemprop="image"
                 alt="Фотографія Ігора Дем'яненко"
                 width="270"
@@ -225,7 +226,6 @@
                 class="members__avatar"
                 srcset="./images/Olha.jpg 1x, ./images/Olha@2x.jpg 2x"
                 src="./images/Olha.jpg"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw"
                 itemprop="image"
                 alt="Фотографія Ольги Репіной"
                 width="270"
@@ -272,7 +272,6 @@
                 class="members__avatar"
                 srcset="./images/Mykola.jpg 1x, ./images/Mykola@2x.jpg 2x"
                 src="./images/Mykola.jpg"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw"
                 itemprop="image"
                 alt="Фотографія Миколи Тарасова"
                 width="270"
@@ -319,7 +318,6 @@
                 class="members__avatar"
                 srcset="./images/Myhaylo.jpg 1x, ./images/Myhaylo@2x.jpg 2x"
                 src="./images/Myhaylo.jpg"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw"
                 itemprop="image"
                 alt="Фотографія Михайла Єрмакова"
                 width="270"

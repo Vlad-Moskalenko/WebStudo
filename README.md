@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+WebStudio company website with responsive layout and attractive design.
